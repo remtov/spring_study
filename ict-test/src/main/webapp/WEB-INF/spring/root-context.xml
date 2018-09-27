@@ -15,6 +15,7 @@
 	<bean id="dataSource"
 		class="org.apache.commons.dbcp2.BasicDataSource"
 		destroy-method="close">
+
 		<!-- 세터주입 (생성자주입방식도있다.) -->
 		<property name="driverClassName"
 			value="oracle.jdbc.OracleDriver" />
@@ -23,8 +24,10 @@
 			value="jdbc:oracle:thin:@localhost:1521:xe" />
 
 		<property name="username" value="ictu" />
+
 		<property name="password" value="12345678" />
 		<!-- url:jdbc:oracle:thin:@localhost:1521:xe user:ictu pwd:12345678 driver:oracle.jdbc.driver.OracleDriver -->
+
 	</bean>
 	<!-- 오라클을 위한 세팅 -->
 
